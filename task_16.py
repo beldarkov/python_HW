@@ -1,10 +1,10 @@
-N = int(input())
+N = int(input("N - "))
 my_list = []
 for _ in range(N):
     my_list.append(int(input()))
-X = int(input())
+X = int(input("X - "))
 count = 0
-for i in my_list:
-    if X == my_list[i - 1]:
+for i in range(len(my_list)):
+    if my_list[i] == X:
         count += 1
 print(count)
