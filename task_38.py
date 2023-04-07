@@ -28,6 +28,7 @@ def delete_from_pb():
     with open('phonebook.csv', 'w') as file:   
         writer = csv.writer(file)
         writer.writerows(rows)
+    print("Удалено!")
     
 def change_info():
     with open('phonebook.csv', 'r') as file:
@@ -43,3 +44,5 @@ def change_info():
         csv.writer = csv.writer(file)
         for line in rows:
             csv.writer.writerow(line)
+    print("Перезаписано!")
+
