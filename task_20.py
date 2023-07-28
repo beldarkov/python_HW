@@ -12,9 +12,8 @@ game = {("A, E, I, O, U, L, N, S, T, R") : 1,
         ("Ж, З, Х, Ц, Ч") : 5, 
         ("Ш, Э, Ю") : 8, 
         ("Ф, Щ, Ъ") : 10}
-word = input("Введите слово: ").upper()
 sum = 0
-for q in word: 
+for q in k.upper(): 
     for i in game:
         for j in i:
             if j == q:
